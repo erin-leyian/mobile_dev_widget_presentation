@@ -1,17 +1,25 @@
-# wheel_demo
+# Airtime Wheel Picker
 
-A new Flutter project.
+ListWheelScrollView widget - Is a scrolling list that curves like a rotating drum, so the user spins it to pick one value.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+![alt text](<Screenshot (1021).png>)
 
-A few resources to get you started if this is your first Flutter project:
+# What it demonstrates
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+A mock airtime top up screen where the user spins a wheel to choose an amount.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# How to run
+
+1. Install Flutter and check it works: `flutter doctor`
+2. Clone the repo and enter the project folder:
+   `git clone [your repo URL]`
+   `cd [folder containing pubspec.yaml]`
+3. `flutter pub get`
+4. `flutter run -d chrome`
+
+# The three attributes
+
+- `itemExtent` : This is the height of each row in pixels.
+- 'diameterRatio`: This controls how curved the wheel is.
+- `perspective`: This controls the 3D depth. Higher means the rows at the top and bottom shrink more.

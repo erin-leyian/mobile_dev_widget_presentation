@@ -1,6 +1,22 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MaterialApp(home: AirtimePicker()));
+import 'dart:ui';
+
+void main() => runApp(
+  MaterialApp(
+    scrollBehavior: AppScrollBehavior(),
+    home: const AirtimePicker(),
+    debugShowCheckedModeBanner: false,
+  ),
+);
+
+class AppScrollBehavior extends MaterialScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+    PointerDeviceKind.touch,
+    PointerDeviceKind.mouse,
+  };
+}
 
 class AirtimePicker extends StatefulWidget {
   const AirtimePicker({super.key});
